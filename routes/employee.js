@@ -8,8 +8,29 @@ const DATABASE = {};
 
 // Get employees
 router.get('', function(req, res) {
-  return res.send(DATABASE);
+  res.status(200).json({
+    message: "Get Works"
+  })
+  // return res.send(DATABASE);
 });
+
+router.post('/', (req, res, next) => {
+  res.status(200).json({
+    message: "Post works"
+  })
+})
+
+router.patch('/', (req, res, next) => {
+  res.status(200).json({
+    message: "Employees Updated"
+  })
+})
+
+router.delete("/", (req, res, next) => {
+  res.status(201).json({
+    message: "Employee Deleted"
+  })
+})
 
 
 module.exports = router;
