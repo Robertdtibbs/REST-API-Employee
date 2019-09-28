@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 app.use('/api/employees', employeeRoutes);
 
-mongoose.connect("mongodb://localhost/RESTAPI", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/RESTAPI", { useNewUrlParser: true, useUnifiedTopology: true});
 
 // Catch all 404
 app.use(function(req, res) {

@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var EmployeeSchema = new Schema({
 
-    id: {
+    _id: {
         type: mongoose.Schema.Types.ObjectId,
         required: true
     },
