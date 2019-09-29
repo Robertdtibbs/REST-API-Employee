@@ -1,8 +1,9 @@
-export {}
-
 var mongoose = require("mongoose");
+
 var Schema = mongoose.Schema;
+
 var EmployeeSchema = new Schema({
+
     _id: {
         type: mongoose.Schema.Types.ObjectId,
         required: true
@@ -11,6 +12,9 @@ var EmployeeSchema = new Schema({
         type: String,
         required: true
     }
-});
-var Employee = mongoose.model("Employee", EmployeeSchema);
+
+})
+
+const Employee = mongoose.model("Employee", EmployeeSchema);
+
 module.exports = Employee;
