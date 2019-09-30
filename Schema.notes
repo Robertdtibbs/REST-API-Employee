@@ -1,0 +1,31 @@
+Schema:
+{
+	"name": "Tommy",
+	"age": "28",
+	"position": "Manager"
+}
+{
+	"name": "Steve",
+	"age": "23",
+	"position": "Farmer"
+}
+{
+	"name": "Glenn",
+	"age": "35",
+	"position": "Physical Therapist"
+}
+{
+	"name": "Kaitlin",
+	"age": "27",
+	"position": "Pharmacist"
+}
+{
+	"name": "Kristin",
+	"age": "28",
+	"position": "Nurse"
+}
+
+Patch Schema
+[
+	{"propName": "name or position or age", "value": "Teacher"}
+]

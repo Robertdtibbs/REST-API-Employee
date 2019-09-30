@@ -1,7 +1,9 @@
+export {}
 var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
 
+// All data required to add new employee
 var EmployeeSchema = new Schema({
 
     _id: {
@@ -11,6 +13,18 @@ var EmployeeSchema = new Schema({
     name: {
         type: String,
         required: true
+    },
+    age: {
+        type: Number,
+        required: true
+    },
+    position: {
+        type: String,
+        required: true
+    },
+    sex: {
+        type: String,
+        required: false
     }
 
 })
